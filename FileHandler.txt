@@ -1,0 +1,74 @@
+
+FileHandler.java – Documentation
+
+File Name:
+FileHandler.java
+
+Project Title:
+Java File Handling Utility – Basic Operations
+
+Author:
+Puranjay Saraswat
+
+Description:
+This Java program demonstrates basic file handling operations using Java’s built-in classes. It includes functionality to:
+
+- Write to a file (overwrites existing content)
+- Append data to an existing file
+- Read the file and print its content line-by-line to the console
+
+This script is part of Internship Task - 1 for demonstrating file handling using a script with clear documentation.
+
+Technologies Used:
+- Java I/O (FileWriter, File, Scanner)
+- Exception Handling (try-catch)
+- Console I/O
+
+Functionality Breakdown:
+
+1. writeToFile(String filename, String content):
+   - Creates or overwrites a file with the specified name.
+   - Writes the given string content to the file.
+   - Closes the file writer after writing.
+   - Prints a success or error message.
+
+2. appendToFile(String filename, String newData):
+   - Opens the file in append mode.
+   - Adds new content to the end of the file.
+   - Automatically creates the file if it doesn’t exist.
+   - Appends a new line before writing the content.
+
+3. readFromFile(String filename):
+   - Opens the file using a Scanner.
+   - Reads and prints each line to the console.
+   - If the file is missing, it throws a FileNotFoundException.
+
+4. main(String[] args):
+   - A sample test sequence:
+     - First, it writes initial content to the file.
+     - Then appends another line.
+     - Finally, reads and displays the full file content.
+
+Sample Output (Terminal):
+
+✅ Content written successfully to sample.txt
+✅ Content appended successfully.
+📄 Reading file content:
+Hello! This is the first line.
+Now this is an extra line at the bottom.
+
+Key Concepts Demonstrated:
+- File I/O in Java
+- Reusability via functions
+- Exception handling for safety
+- Commenting and readability for beginner-level understanding
+
+Limitations:
+- Only works with plain text files (.txt)
+- Doesn't handle input from users interactively
+- No file deletion or renaming features included
+
+Possible Enhancements:
+- Add a menu-based interface (done in the second version)
+- Add support for user file name input via command line
+- Use BufferedReader/BufferedWriter for larger files
